@@ -31,20 +31,44 @@
                                 <rect key="frame" x="172.5" y="78" width="30" height="30"/>
                                 <state key="normal" title="Poo"/>
                                 <connections>
-                                    <action selector="buttontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aht-iI-Bm8"/>
+                                    <action selector="buttontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYl-60-xva"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJS-FI-yZZ">
+                                <rect key="frame" x="137.5" y="164" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="A3H-Wa-RrV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ8-Ef-LFo">
+                                <rect key="frame" x="137.5" y="209" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="pQ7-cp-iy9"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CSk-fC-ZER" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="203-hC-YuX"/>
                             <constraint firstItem="PoC-2g-AMe" firstAttribute="top" secondItem="CSk-fC-ZER" secondAttribute="bottom" constant="24" id="38y-WA-gi0"/>
                             <constraint firstItem="PoC-2g-AMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S1g-E9-yFs"/>
+                            <constraint firstItem="eJS-FI-yZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fkC-vQ-mNo"/>
+                            <constraint firstItem="ZJ8-Ef-LFo" firstAttribute="top" secondItem="eJS-FI-yZZ" secondAttribute="bottom" constant="15" id="i8Z-lV-tL5"/>
+                            <constraint firstItem="ZJ8-Ef-LFo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mTm-12-ZAe"/>
                             <constraint firstItem="CSk-fC-ZER" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qU7-se-Qia"/>
+                            <constraint firstItem="eJS-FI-yZZ" firstAttribute="top" secondItem="PoC-2g-AMe" secondAttribute="bottom" constant="56" id="rRh-yf-S7l"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="CSk-fC-ZER" id="csL-Oj-x2w"/>
+                        <outlet property="text1" destination="eJS-FI-yZZ" id="yHX-Ih-mR0"/>
+                        <outlet property="text2" destination="ZJ8-Ef-LFo" id="dQA-mk-cNS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
